@@ -1,10 +1,10 @@
 {
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "name": "erebot/skeleton-module",
-    "description": "Skeleton for a new module designed for Erebot",
+    "name": "erebot/inspector-module",
+    "description": "Erebot module to debug Erebot",
     "keywords": ["Erebot", "IRC", "bot", "module"],
-    "homepage": "https://github.com/Erebot/Erebot_Module_Skeleton",
+    "homepage": "https://github.com/Erebot/Erebot_Module_Inspector",
     "license": "GPL-3.0+",
     "authors": [
         {
@@ -15,15 +15,22 @@
     ],
     "support": {
         "email": "erebot@erebot.net",
-        "issues": "https://github.com/Erebot/Erebot_Module_Skeleton/issues",
-        "wiki": "http://erebot.github.io/Erebot_Module_Skeleton/",
+        "issues": "https://github.com/Erebot/Erebot_Module_Inspector/issues",
+        "wiki": "http://erebot.github.io/Erebot_Module_Inspector/",
         "irc": "irc://irc.iiens.net/Erebot",
-        "source": "https://github.com/Erebot/Erebot_Module_Skeleton"
+        "source": "https://github.com/Erebot/Erebot_Module_Inspector"
     },
     "require": {
         "php": ">=5.2.2",
-        "erebot/installers": "dev-master",
-        "erebot/generic-doc": "dev-master"
+        "erebot/api": "~0.6.0",
+        "erebot/generic-doc": "~0.1.0",
+        "erebot/triggerregistry-module": "~0.1.0",
+        "fpoirotte/pssht": "dev-master",
+        "fpoirotte/xrl": "dev-master"
+    },
+    "require-dev": {
+        "erebot/buildenv": "~1.1",
+        "erebot/testenv": "~1.0"
     },
     "autoload": {
         "psr-0": {

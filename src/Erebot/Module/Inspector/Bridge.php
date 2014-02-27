@@ -50,14 +50,14 @@ class XRL implements \Clicky\Pssht\HandlerInterface
         $this->connection   = $connection;
         $this->buffer       = new \Clicky\Pssht\Buffer();
 
-        require_once(
-            dirname(dirname(__DIR__)) .
-            DIRECTORY_SEPARATOR . 'XRL' .
-            DIRECTORY_SEPARATOR . 'src' .
-            DIRECTORY_SEPARATOR . 'XRL' .
-            DIRECTORY_SEPARATOR . 'Autoload.php'
-        );
-        \spl_autoload_register(array('XRL_Autoload', 'load'));
+#        require_once(
+#            dirname(dirname(__DIR__)) .
+#            DIRECTORY_SEPARATOR . 'XRL' .
+#            DIRECTORY_SEPARATOR . 'src' .
+#            DIRECTORY_SEPARATOR . 'XRL' .
+#            DIRECTORY_SEPARATOR . 'Autoload.php'
+#        );
+#        \spl_autoload_register(array('XRL_Autoload', 'load'));
         $this->server       = new \XRL_Server();
 
         $connection->setHandler(
