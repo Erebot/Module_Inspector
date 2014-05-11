@@ -16,26 +16,20 @@
     along with Erebot.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+namespace Erebot\Module;
+
 /**
  * \brief
  *      A module that provides debugging helpers for Erebot
  *      using introspection and XML-RPC over SSH.
  */
-class   Erebot_Module_Inspector
-extends Erebot_Module_Base
+class Inspector extends \Erebot\Module\Base
 {
-    /// A list of handlers registered by this module.
-    protected $_handlers;
-
-    /// A list of triggers registered by this module.
-    protected $_triggers;
-
-
     /**
      * This method is called whenever the module is (re)loaded.
      *
      * \param int $flags
-     *      A bitwise OR of the Erebot_Module_Base::RELOAD_*
+     *      A bitwise OR of the Erebot::Module::Base::RELOAD_*
      *      constants. Your method should take proper actions
      *      depending on the value of those flags.
      *
@@ -43,8 +37,7 @@ extends Erebot_Module_Base
      *      See the documentation on individual RELOAD_*
      *      constants for a list of possible values.
      */
-    public function _reload($flags)
+    public function reload($flags)
     {
     }
 }
-
