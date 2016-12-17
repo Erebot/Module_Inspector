@@ -3,7 +3,7 @@
     "name": "erebot/inspector-module",
     "description": "Erebot module to debug Erebot",
     "keywords": ["Erebot", "IRC", "bot", "module"],
-    "homepage": "https://github.com/Erebot/Erebot_Module_Inspector",
+    "homepage": "https://github.com/Erebot/Module_Inspector",
     "license": "GPL-3.0+",
     "authors": [
         {
@@ -13,11 +13,9 @@
         }
     ],
     "support": {
-        "email": "erebot@erebot.net",
-        "issues": "https://github.com/Erebot/Erebot_Module_Inspector/issues",
-        "wiki": "http://erebot.github.io/Erebot_Module_Inspector/",
+        "issues": "https://github.com/Erebot/Module_Inspector/issues",
         "irc": "irc://irc.iiens.net/Erebot",
-        "source": "https://github.com/Erebot/Erebot_Module_Inspector"
+        "source": "https://github.com/Erebot/Module_Inspector"
     },
     "require": {
         "php": ">=5.3.0",
